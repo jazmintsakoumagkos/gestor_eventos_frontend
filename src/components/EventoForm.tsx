@@ -48,7 +48,6 @@ export default function EventoForm({ evento, onSave, onCancel }: Props) {
           await onSave(values);
           helpers.resetForm();
         } catch {
-          // El mensaje de error se muestra en la página que contiene el formulario.
         } finally {
           helpers.setSubmitting(false);
         }
